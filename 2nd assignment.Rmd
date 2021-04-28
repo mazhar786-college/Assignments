@@ -1,0 +1,84 @@
+---
+title: "2nd assignment"
+author: "mazhar hussain"
+date: "4/27/2021"
+output: html_document
+--
+
+## working directory
+
+setwd("C:/Users/mazha/Desktop/1st repository/bsc-species-distribution-modelling-2021-mazhar786-college")
+
+##  importing of data
+
+butterflies.data<- read.csv("butterflies data.csv", header=TRUE)
+
+butterflies.data
+
+##  data frame
+
+
+data.frame(butterflies.data)
+
+
+## structure 
+
+str(butterflies.data)
+
+##  data type of each column
+
+
+sapply(butterflies.data, class)
+
+
+## vector object
+
+
+df<- butterflies.data
+
+
+df
+
+vectorobject<-df$error
+
+
+vectorobject
+
+
+print(vectorobject)
+
+
+##  removal of rows with values larger than one
+
+
+
+str(vectorobject)
+
+
+df.t<- t(vectorobject)
+
+
+df.t
+
+
+removal<-df.t[-c(172:187)]
+
+
+removal
+
+
+##  New csv. file
+
+
+sink("output.csv")
+
+
+print(removal)
+
+
+sink()
+
+
+
+
+

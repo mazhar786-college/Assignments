@@ -1,0 +1,82 @@
+---
+title: "markdown file"
+author: "mazhar hussain"
+date: "4/20/2021"
+output: html_document
+---
+##o  assigning the values
+
+a <- 2
+
+b <- 5
+
+
+##  Computing the sum, difference, product and ratio
+
+
+r1 <- a+b
+
+
+r2 <- a-b
+
+r3 <- a*b
+
+r4 <- a/b
+
+
+##  creation of vector v1
+
+
+v1 <- c(r1,r2,r3,r4)
+
+
+##  addition of 5th entry to v1
+
+
+v1[5]<-a**b
+
+
+##  Print v1
+
+
+print(v1)
+
+
+##  creation of 2nd vector v2
+
+
+v2<-c('sum','difference','product','ratio','power')
+
+##  print v2
+
+
+print(v2)
+
+
+##  data.frame
+
+
+df<-data.frame(v1,v2)
+
+
+##  column names
+
+
+colnames(df)<-c("Results","Operation")
+
+
+##  print df
+
+
+
+print(df)
+
+
+##  showing entry of 3 row and 1 column
+
+
+print(df[3,1])
+
+
+
+

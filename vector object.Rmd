@@ -1,0 +1,28 @@
+---
+title: "csv file"
+author: "mazhar hussain"
+date: "4/26/2021"
+output: html_document
+
+---
+
+str(butterflies.data)
+
+df<-(butterflies.data)
+
+print(df)
+
+colnames((butterflies.data))
+
+sapply(butterflies.data, class)
+
+sink("output.txt")
+print(df)
+
+sink()
+
+df[-c(172:187),]
+
+rowsleft<- df[-c(4>1,error)]
+rowsleft
+
